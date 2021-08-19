@@ -1,0 +1,49 @@
+.d-grid {
+    display: grid!important;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+}
+.custom{
+    position: relative;
+}
+.custom::after{
+    position: absolute;
+    height: 100%;
+    content: "";
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    background: linear-gradient(45deg,rgb(44, 44, 44),rgba(0, 0, 0, 0.342));
+}
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {   
+  border-color: rgba(126, 239, 104, 0);
+  outline: 0 none;
+}
+.color-yellow{
+    background: rgb(118, 139, 0);
+    transition: .5s;
+    color: black;
+}
+.color-pink{
+    background: rgb(129, 0, 129);
+    transition: .5s;
+    color: black;
+}
+.height{
+    height: 10rem;
+}
