@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+body{
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900;
+    background: linear-gradient(45deg,rgb(156, 106, 106),rgb(92, 139, 92),rgb(83, 122, 122),rgb(146, 107, 100))
+}
 .d-grid {
     display: grid!important;
     grid-template-columns: repeat(4,1fr);
@@ -35,15 +41,32 @@ input[type="color"]:focus,
   outline: 0 none;
 }
 .color-yellow{
-    background: rgb(118, 139, 0);
+    background: rgb(25, 122, 69);
     transition: .5s;
-    color: black;
+    color: rgb(212, 206, 206);
 }
 .color-pink{
-    background: rgb(129, 0, 129);
+    background: rgb(21, 102, 114);
     transition: .5s;
-    color: black;
+    color: rgb(190, 188, 188);
 }
 .height{
     height: 10rem;
+    overflow: hidden;
+}
+#bg-dark{
+    background: rgb(27, 27, 27);
+}
+.bgWhite{
+    /* box-shadow: 5px 5px 5px black; */
+    color: black;
+    border-radius: .6rem;
+}
+.bg{
+    background: rgb(41, 41, 41);
+    color: white;
+    border-radius: .6rem;
+}
+.bg:hover{
+    box-shadow:5px 5px 5px rgb(99, 98, 108);
 }

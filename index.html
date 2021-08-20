@@ -18,97 +18,114 @@
 
     <header>
         <section class="">
-            <div class="container">
-                <div class="row mt-3">
-                    <div class="col-12 col-md-4 m-0 p-0"></div>
-                    <div class="col-12 col-md-4 m-0 p-0">
-                        <div class="bg-dark text-light shadow-lg m-0 p-3 pb-4">
-                            <!-- time & network  -->
-                                <div class="row">
-                                    <div class="col-8">
-                                        <p>
-                                        <span id="clockHour"></span>:
-                                        <span id="clockMinute"></span>
-                                        <span id="ampm"></span>
-                                    </p>
-                                    <h4 id="time"></h4>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="d-flex ms-auto p-0">
-                                            <i class="fas fa-broadcast-tower"></i>
-                                            <i class="ms-1 fas fa-wifi"></i>
-                                            <i class="ms-1 fas fa-battery-three-quarters"></i>
+            <div class="container p-0">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <div style="width: 23.5rem;" class="">
+                            <div id="bg-dark" class="text-light shadow-lg m-0 p-3 pb-2">
+                                <!-- time & network  -->
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <p id="textDark">
+                                            <span id="clockHour"></span>:
+                                            <span id="clockMinute"></span>
+                                            <span id="ampm"></span>
+                                        </p>
+                                        <h4 id="time"></h4>
+                                        </div>
+                                        <div class="col-5">
+                                            <div class="d-flex p-0">
+                                                <!-- <i class="fas fa-broadcast-tower"></i>
+                                                <i class="ms-1 fas fa-wifi"></i>
+                                                <i class="ms-1 fas fa-battery-three-quarters"></i> -->
+                                                <p id="day"></p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- display  -->
-                                <div class="py-3 text-light height">
-                                    <h2 class="w-100 py-3 fs-1 text-light text-end bg-dark border-0" type="text" name="" id="display">
-                                    <h1 id="result" class="m-0 text-end">0</h1>
-                                </div>
-                                <!-- button  -->
-                                
-                                <div id="all" class="d-grid px-3">
-                                    <p onclick="clear()" class="p-3 shadow-lg color-yellow m-0 text-center rounded-pill ">C</p>
-                                    <p id="" class="p-3 shadow-lg color-yellow m-0 text-center rounded-pill ">(</p>
-                                    <p id="" class="p-3 shadow-lg color-yellow m-0 text-center rounded-pill ">)</p>
-                                    <p id="" class="p-3 shadow-lg color-pink m-0 text-center rounded-pill">x</p>
-                                    <p id="" class="p-3 shadow-lg color-yellow m-0 text-center rounded-pill "><i class="fas fa-square-root-alt"></i></p>
-                                    <p id="" class="p-3 shadow-lg color-yellow m-0 text-center rounded-pill ">lll</p>
-                                    <p id="" class="p-3 shadow-lg color-yellow m-0 text-center rounded-pill "><i class="fas fa-superscript"></i></p>
-                                    <p id="" class="color-pink p-3 shadow-lg m-0 text-center rounded-pill">/</p>
-                                    <p class="p-3 shadow-lg bg-dark m-0 text-center ">7</p>
-                                    <p class="p-3 shadow-lg bg-dark m-0 text-center ">8</p>
-                                    <p class="p-3 shadow-lg bg-dark m-0 text-center ">9</p>
-                                    <p id="" class="p-3 shadow-lg color-pink m-0 text-center rounded-pill ">-</p>
-                                    <p class="p-3 shadow-lg bg-dark m-0 text-center ">4</p>
-                                    <p class="p-3 shadow-lg bg-dark m-0 text-center ">5</p>
-                                    <p class="p-3 shadow-lg bg-dark m-0 text-center ">6</p>
-                                    <p id="" class="p-3 shadow-lg color-pink m-0 text-center rounded-pill ">+</p>
-                                    <p class="p-3 shadow-lg bg-dark m-0 text-center ">1</p>
-                                    <p class="p-3 shadow-lg bg-dark m-0 text-center ">2</p>
-                                    <p id="" class="p-3 shadow-lg bg-dark m-0 text-center ">3</p>
-                                    <p id="equal" style="grid-row-start: span 2;" class="p-3 shadow-lg color-pink m-0 text-center rounded-pill d-flex align-items-center justify-content-center">=</p>
-                                    <p id="" class="p-3 shadow-lg bg-dark m-0 text-center rounded-pill ">.</p>
-                                    <p id="num" class="p-3 shadow-lg bg-dark m-0 text-center ">0</p>
-                                    <p id="" class="p-3 shadow-lg bg-dark m-0 text-center rounded-pill"><i id="delete" class="fas fa-backspace w-100 h-100"></i></p>
-                                </div>
-                                <!-- &#x2190 -->
+                                    <!-- display  -->
+                                    <div class="py-3 text-light bg-dark height px-2 mb-2">
+                                        <h2 class="w-100 py-3 fs-1 text-light text-end border-0" type="text" name="" id="display">
+                                        <h1 id="result" class="m-0 text-end"><small class="text-danger fs-3">bipul_chandro_roy</small></h1>
+                                    </div>
+                                    <!-- button  -->
+                                    
+                                    <div id="all" class="d-grid px-2 pb-2">
+                                        <p onclick="clear()" class="p-3 shadow-lg color-yellow m-0 text-center rounded-pill ">C</p>
+                                        <p id="" class="p-3 shadow-lg color-yellow m-0 text-center rounded-pill ">00</p>
+                                        <p onclick="back()" class="p-3 shadow-lg color-yellow m-0 text-center rounded-pill ">light</p>
+                                        <p data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="p-3 shadow-lg color-yellow m-0 text-center rounded-pill ">Q</p>
+                                        
+                                        
+                                        <p id="" class="p-3 shadow-lg color-yellow m-0 text-center rounded-pill ">(</p>
+                                        <p id="" class="p-3 shadow-lg color-yellow m-0 text-center rounded-pill ">)</p>
+                                        <p id="" class="p-3 shadow-lg color-pink m-0 text-center rounded-pill">x</p>
+                                        <p id="" class="color-pink p-3 shadow-lg m-0 text-center rounded-pill">/</p>
+                                        <p class="p-3 shadow-lg bg m-0 text-center ">8</p>
+                                        <p class="p-3 shadow-lg bg m-0 text-center ">7</p>
+                                        <p class="p-3 shadow-lg bg m-0 text-center ">9</p>
+                                        <p id="" class="p-3 shadow-lg color-pink m-0 text-center rounded-pill ">-</p>
+                                        <p class="p-3 shadow-lg bg m-0 text-center ">4</p>
+                                        <p class="p-3 shadow-lg bg m-0 text-center ">5</p>
+                                        <p class="p-3 shadow-lg bg m-0 text-center ">6</p>
+                                        <p id="" class="p-3 shadow-lg color-pink m-0 text-center rounded-pill ">+</p>
+                                        <p class="p-3 shadow-lg bg m-0 text-center ">1</p>
+                                        <p class="p-3 shadow-lg bg m-0 text-center ">2</p>
+                                        <p id="" class="p-3 shadow-lg bg m-0 text-center ">3</p>
+                                        <p id="equal" style="grid-row-start: span 2;" class="p-3 shadow-lg color-pink m-0 text-center rounded-pill d-flex align-items-center justify-content-center">=</p>
+                                        <p id="" class="p-3 shadow-lg bg m-0 text-center rounded-pill ">.</p>
+                                        <p id="num" class="p-3 shadow-lg bg m-0 text-center ">0</p>
+                                        <p id="" class="p-3 shadow-lg bg m-0 text-center rounded-pill"><i id="delete" class="fas fa-backspace w-100 h-100"></i></p>
+                                    </div>
+                                    <!-- &#x2190 -->
+                            </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4"></div>
-                </div>
             </div>
         </section>
     </header>
     <!-- header area end  -->
- 
 
 
 
-    <!-- main area start  -->
-    <main>
-        <section>
-            <div class="container">
-
-            </div>
-        </section>
-    </main>
-    <!-- main area end  -->
+    <!-- modal  -->
 
 
+<!-- Button trigger modal -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Small Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <h6 class="text-danger">Technology</h6>
+          1.html5
+          2.css3
+          3.bootstrap5
+          4.javaScript
+          <br>
+          <br>
+          <h6 class="text-danger">Originator</h6>
+          bipul_chandro_roy
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
-    <!-- footer area start  -->
-    <footer>
-        <section>
-            <div class="container">
 
-            </div>
-        </section>
-    </footer>
-    <!-- footer area start  -->
+
+
+
+
+
 
     <!-- font awesome js  -->
     <script src="https://kit.fontawesome.com/b7ab4b2e5e.js" crossorigin="anonymous"></script>
