@@ -67,6 +67,3 @@ input[type="color"]:focus,
     color: white;
     border-radius: .6rem;
 }
-.bg:hover{
-    box-shadow:5px 5px 5px rgb(99, 98, 108);
-}
